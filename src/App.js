@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import './App.css';
 
 import { lightTheme, darkTheme } from './themes';
-import { GlobalLayout }from './GlobalStyle';
+import { GlobalLayout } from './GlobalStyle';
 import Toggle from './Toggle';
 
 class App extends React.Component {
@@ -16,7 +16,7 @@ class App extends React.Component {
     };
 
     toggleTheme=() => {
-      if(this.state.theme === 'light'){
+      if(this.state.theme === 'light') {
         this.setState({
           inputText: this.state.inputText,
           theme: 'dark',
@@ -55,3 +55,5 @@ class App extends React.Component {
     )
   }
 }
+
+export default App;
